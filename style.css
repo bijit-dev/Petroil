@@ -81,13 +81,23 @@ navber css end
 banner css start
 =================== */
 .banner{
-    
+    height: 783px;
     background-image: url('./images/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
     
-
+}
+.banner .container .overly{
+  position: absolute;
+  top: 780px;
+  left: 390;
+  transition: 0.4s;
+}
+.banner:hover .container .overly{
+  top: 0;
 }
 .banner_part{
     padding: 260px 0px 340px 0;
@@ -114,7 +124,6 @@ banner css start
 .banner_part button:hover{
     background: transparent;
     border-color: red;
-
 }
 /* ================
 banner css end
@@ -211,15 +220,37 @@ Country css end
   width: 50%;
   height: 400px;
 }
-.sercive .right .rigth_Img{
+.sercive .right .sercive_box1{
   width: 100%;
   height: 100%;
-  background-image: url("./images/service/serviceImg1.png");
+  background-image: url("./images/services_img/serviceImg1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
-.sercive .right .rigth_Img .overly{
+.sercive .right .sercive_box2{
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/services_img/serviceImg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.sercive .right .sercive_box3{
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/services_img/serviceImg3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.sercive_box1 .overly, .sercive_box2 .overly, .sercive_box3 .overly{
   width: 100%;
   height: 100%;
   background: rgba(35, 35, 35,0.6 );
@@ -227,23 +258,30 @@ Country css end
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: -400px;
+  left: 0;
+  transition: 0.4s;
+}
+.sercive_box1:hover .overly, .sercive_box2:hover .overly, .sercive_box3:hover .overly{
+  bottom: 0;
 }
 .sercive .right h2{
   font-size: 36px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
   color: white;
   padding-bottom: 20px;
 }
 .sercive .right button{
-  border: 2px solid white;
+  border: 2px solid rgb(244, 6, 6);
   padding: 10px 20px;
   background: red;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
   color: white;
-  border: 0px;
+}
+.sercive .right button:hover{
+  background: rgba(20, 251, 4, 0.96);
 }
 .sercive .box{
   flex-wrap: wrap;
@@ -256,7 +294,7 @@ Country css end
   About  css start
 =================== */
 .about {
-  padding: 136px 0px;
+  padding: 90px 0px;
 }
 
 .about .main_image{
@@ -292,6 +330,19 @@ Country css end
   
   
 }
+.about .main_image .btn{
+  height: 100%;
+  background: #000;
+  background-image: url('./images/aboutImg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  background-size: 100%;
+  transition: 0.4s;
+}
+.about .main_image:hover .btn{
+  background-size: 70%;
+}
 
 .about .main_image button{
   border: 2px solid white;
@@ -306,9 +357,8 @@ Country css end
   left: 50%;
   top: 50%;
   transition: .4s;
-  
-
 }
+
 .about .main_image:hover .overly{
   left: 0;
 
@@ -316,7 +366,25 @@ Country css end
 
 .about .main_image:hover button{
   left: 64%;
+
+}
+.about .main_image button:hover{
+  background: rgba(20, 251, 4, 0.96);
+
 }
 /* ================
   About  css end
+=================== */
+
+/* ================
+icon  css start
+=================== */
+.icon{
+  background: #ffff;
+  border-top: 1px solid #f5e8e8;
+  border-bottom: 1px solid #f5e8e8;
+  padding: 20px 0;
+}
+/* ================
+icon  css end
 =================== */
