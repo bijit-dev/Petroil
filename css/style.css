@@ -15,7 +15,9 @@ common css start
     display: flex;
     
 }
-
+a{
+  text-decoration: none;
+}
 /* ================
 common css end
 =================== */
@@ -82,21 +84,23 @@ banner css start
 =================== */
 .banner{
     height: 783px;
-    background-image: url('./images/banner.png');
+    background-image: url('../images/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    
 }
-.banner .container .overly{
+.banner .overly{
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 780px;
-  left: 390;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: 0.4s;
 }
-.banner:hover .container .overly{
+.banner:hover .overly{
   top: 0;
 }
 .banner_part{
@@ -223,7 +227,7 @@ Country css end
 .sercive .right .sercive_box1{
   width: 100%;
   height: 100%;
-  background-image: url("./images/services_img/serviceImg1.png");
+  background-image: url("../images/services_img/serviceImg1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -233,7 +237,7 @@ Country css end
 .sercive .right .sercive_box2{
   width: 100%;
   height: 100%;
-  background-image: url("./images/services_img/serviceImg2.png");
+  background-image: url("../images/services_img/serviceImg2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -243,7 +247,7 @@ Country css end
 .sercive .right .sercive_box3{
   width: 100%;
   height: 100%;
-  background-image: url("./images/services_img/serviceImg3.png");
+  background-image: url("../images/services_img/serviceImg3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -295,11 +299,12 @@ Country css end
 =================== */
 .about {
   padding: 90px 0px;
+  background: #F0F0F0;
 }
 
 .about .main_image{
   width: 100%;
-  background-image: url('./images/aboutImg.png');
+  background-image: url('../images/aboutImg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -332,8 +337,7 @@ Country css end
 }
 .about .main_image .btn{
   height: 100%;
-  background: #000;
-  background-image: url('./images/aboutImg.png');
+  background-image: url('../images/aboutImg.png');
   background-repeat: no-repeat;
   background-position: right;
   border: none;
@@ -379,12 +383,195 @@ Country css end
 /* ================
 icon  css start
 =================== */
+
 .icon{
   background: #ffff;
-  border-top: 1px solid #f5e8e8;
-  border-bottom: 1px solid #f5e8e8;
-  padding: 20px 0;
+  padding: 250px 0;
 }
+.icon .box{
+  justify-content: space-between;
+}
+
 /* ================
 icon  css end
 =================== */
+
+/* ================
+  Cart  css start
+=================== */
+.cart{
+  padding-top: 110px;
+  padding-bottom: 160px;
+  background: #F0F0F0;
+}
+.cart .box{
+  justify-content: space-between;
+}
+.cart_item{
+  width: 339px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart_item .overly{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0,0.6);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: .4s;
+}
+.cart_item:hover .overly{
+  top: 0;
+}
+
+.cart .overly p{
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  width: 249px;
+}
+.cart .overly a{
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 10px 22px;
+  
+  background: rgba(255, 255, 255,0.6);
+  margin-top: 52px;
+  display: inline-block;
+}
+
+.cart .overly{
+  padding: 76px 46px;
+  box-sizing: border-box;
+}
+
+.cart h5{
+  padding-top: 30px;
+  text-align: right;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
+
+
+}
+.cart h5 i{
+  margin-left: 5px;
+}
+/* ================
+  Cart  css end
+=================== */
+/* ================
+  
+Contact  css stact
+=================== */
+
+.contact img{
+  width: 100%;
+}
+.sub_section{
+  padding: 46px 0px;
+  background: red;
+}
+.contact .box h4{
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.contact .box a{
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 10px 22px;
+  
+  background: transparent;
+  display: inline-block;
+  border: 2px solid white;
+}
+.contact .box{
+  align-items: center;
+  justify-content: space-between;
+}
+/* ================
+  
+Contact  css end
+=================== */
+/* ================
+  
+Footer  css starty
+=================== */
+.footer{
+  background: #000;
+  padding-top: 120px;
+  padding-bottom: 220px;
+}
+
+.footer .one{
+  width: 40%;
+}
+.footer .one img{
+  padding-bottom: 33px;
+}
+.footer .two{
+  width: 15%;
+
+}
+.footer .three{
+  width: 15%;
+}
+.footer .four{
+  width: 30%;
+  
+}
+.footer .box ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer ul li{
+  color: white;
+}
+.footer ul li i{
+  margin-right: 5px;
+}
+.icon_imge{
+  column-gap: 20px;
+}
+.headli{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.icon_ul {
+  display: flex;
+  column-gap: 50px;
+
+}
+.icon_ul li i{
+  margin-top: 50px;
+  color: red;
+  font-size: 30px;
+
+}
+/* ================
+  
+Footer  css end
+=================== */
+
+.copy{
+  background: #282828;
+  padding: 40px 0px;
+}
+.copy p{
+  color: #6C6C6C;
+  font-size: 20px;
+}
+
