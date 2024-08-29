@@ -1,97 +1,112 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 /* ================
 common css start
 =================== */
-.container{
-    width: 1140px;
-    margin: 0 auto;
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
-.box{
-    display: flex;
-    
+
+.box {
+  display: flex;
+
 }
-a{
+
+a {
   text-decoration: none;
 }
+ul,ol{
+  list-style: none;
+}
+
 /* ================
 common css end
 =================== */
 /* ================
 navber css start
 =================== */
-nav{
-    background: red;
-    padding: 14px 0px;
-    width: 100%;
+nav {
+  background: red;
+  padding: 14px 0px;
+  width: 100%;
 }
 
-nav .box{
-    padding: 1px 0px;
-    align-items: center;
-}
-.logo_part{
-    width: 40%;
+nav .box {
+  padding: 1px 0px;
+  align-items: center;
 }
 
-.menu_part{
-    width: 50%;
-}
-.ul{
-    display: flex;
-    column-gap: 38px;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    padding: 2px 3px;
-    list-style: none;
-}
-.menu_part li{
-    padding: 2px 4px;
-    transition: 0.5s;
-    border: 2px solid transparent;
-    cursor: pointer;
-}
-.menu_part li:hover{
-    background-color: rgba(57, 117, 190, 0.785);
-    border: 2px solid rgb(0, 173, 247);
+.logo_part {
+  width: 40%;
 }
 
-.button_part{
-    width: 10%;
-    cursor: pointer;
+.menu_part {
+  width: 50%;
 }
-.button_part button{
-    border: 2px solid white;
-    padding: 10px 20px;
-    background: transparent;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+
+.ul {
+  display: flex;
+  column-gap: 38px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 2px 3px;
+  list-style: none;
 }
-.button_part button:hover{
-    background-color: rgb(239, 235, 28);
+
+.menu_part li {
+  padding: 2px 4px;
+  transition: 0.5s;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
+
+.menu_part li:hover {
+  background-color: rgba(57, 117, 190, 0.785);
+  border: 2px solid rgb(0, 173, 247);
+}
+
+.button_part {
+  width: 10%;
+  cursor: pointer;
+}
+
+.button_part button {
+  border: 2px solid white;
+  padding: 10px 20px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.button_part button:hover {
+  background-color: rgb(239, 235, 28);
+}
+
 /* ================
 navber css end
 =================== */
 /* ================
 banner css start
 =================== */
-.banner{
-    height: 783px;
-    background-image: url('../images/banner.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+.banner {
+  height: 783px;
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
-.banner .overly{
+
+.banner .overly {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 100%;
@@ -100,35 +115,41 @@ banner css start
   height: 100%;
   transition: 0.4s;
 }
-.banner:hover .overly{
+
+.banner:hover .overly {
   top: 0;
 }
-.banner_part{
-    padding: 260px 0px 340px 0;
+
+.banner_part {
+  padding: 260px 0px 340px 0;
 }
-.banner_part h2{
-    font-size: 64px;
-    font-weight: 700;
-    color: white;
-    width: 843px;
-    padding-bottom: 30px;
+
+.banner_part h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  width: 843px;
+  padding-bottom: 30px;
 
 }
-.banner_part button{
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
-    padding: 14px 40px;
-    background: red;
-    border: 0;
-    border: 1px solid transparent;
-    transition: .4s;
-    cursor: pointer;
+
+.banner_part button {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 14px 40px;
+  background: red;
+  border: 0;
+  border: 1px solid transparent;
+  transition: .4s;
+  cursor: pointer;
 }
-.banner_part button:hover{
-    background: transparent;
-    border-color: red;
+
+.banner_part button:hover {
+  background: transparent;
+  border-color: red;
 }
+
 /* ================
 banner css end
 =================== */
@@ -136,55 +157,63 @@ banner css end
 /* ================
 Country css start
 =================== */
-.country{
-    padding-top: 70px;
-}
-.country .container{
-    padding-bottom: 100px;
-}
-.country .box{
-    align-items: center;
-
-}
-.country .left{
-    width: 40%;
-    
-}
-.country .left h3{
-    font-size: 48px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    width: 290px;
-    line-height: 72px;
+.country {
+  padding-top: 70px;
 }
 
-.country .right{
-    width: 60%;
-}
-.country .right p{
-    font-size: 18px;
-    font-weight: 500;
-    color: #6C6C6C;
-    width: 650px;
-    line-height: 24px;
-}
-.country .gellry_sec{
-    width: 100%;
-    justify-content: space-between;
-}
-.box_img{
-    width: 24%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.country .container {
+  padding-bottom: 100px;
 }
 
-.box_img img{
-    width: 100%;
-    height: 100%;   
+.country .box {
+  align-items: center;
+
 }
+
+.country .left {
+  width: 40%;
+
+}
+
+.country .left h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  width: 290px;
+  line-height: 72px;
+}
+
+.country .right {
+  width: 60%;
+}
+
+.country .right p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6C6C6C;
+  width: 650px;
+  line-height: 24px;
+}
+
+.country .gellry_sec {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.box_img {
+  width: 24%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_img img {
+  width: 100%;
+  height: 100%;
+}
+
 /* ================
 Country css end
 =================== */
@@ -192,39 +221,44 @@ Country css end
 /* ================
   Service  css start6
 =================== */
-.sercive{
-    padding-top: 30px;
+.sercive {
+  padding-top: 30px;
 }
-.sercive .left{
+
+.sercive .left {
   width: 50%;
-  height: 400px;  
+  height: 400px;
 }
-  
-.sercive .left div{
+
+.sercive .left div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
 }
-.sercive .left h2{
+
+.sercive .left h2 {
   font-size: 64px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: black;
 }
-.sercive .left p{
+
+.sercive .left p {
   font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #6C6C6C;
   width: 405px;
 }
-.sercive .right{
+
+.sercive .right {
   width: 50%;
   height: 400px;
 }
-.sercive .right .sercive_box1{
+
+.sercive .right .sercive_box1 {
   width: 100%;
   height: 100%;
   background-image: url("../images/services_img/serviceImg1.png");
@@ -234,7 +268,8 @@ Country css end
   position: relative;
   overflow: hidden;
 }
-.sercive .right .sercive_box2{
+
+.sercive .right .sercive_box2 {
   width: 100%;
   height: 100%;
   background-image: url("../images/services_img/serviceImg2.png");
@@ -244,7 +279,8 @@ Country css end
   position: relative;
   overflow: hidden;
 }
-.sercive .right .sercive_box3{
+
+.sercive .right .sercive_box3 {
   width: 100%;
   height: 100%;
   background-image: url("../images/services_img/serviceImg3.png");
@@ -254,10 +290,13 @@ Country css end
   position: relative;
   overflow: hidden;
 }
-.sercive_box1 .overly, .sercive_box2 .overly, .sercive_box3 .overly{
+
+.sercive_box1 .overly,
+.sercive_box2 .overly,
+.sercive_box3 .overly {
   width: 100%;
   height: 100%;
-  background: rgba(35, 35, 35,0.6 );
+  background: rgba(35, 35, 35, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,16 +306,21 @@ Country css end
   left: 0;
   transition: 0.4s;
 }
-.sercive_box1:hover .overly, .sercive_box2:hover .overly, .sercive_box3:hover .overly{
+
+.sercive_box1:hover .overly,
+.sercive_box2:hover .overly,
+.sercive_box3:hover .overly {
   bottom: 0;
 }
-.sercive .right h2{
+
+.sercive .right h2 {
   font-size: 36px;
   font-weight: 500;
   color: white;
   padding-bottom: 20px;
 }
-.sercive .right button{
+
+.sercive .right button {
   border: 2px solid rgb(244, 6, 6);
   padding: 10px 20px;
   background: red;
@@ -284,12 +328,15 @@ Country css end
   font-weight: 600;
   color: white;
 }
-.sercive .right button:hover{
+
+.sercive .right button:hover {
   background: rgba(20, 251, 4, 0.96);
 }
-.sercive .box{
+
+.sercive .box {
   flex-wrap: wrap;
 }
+
 /* ================
   Service  css end
 =================== */
@@ -302,7 +349,7 @@ Country css end
   background: #F0F0F0;
 }
 
-.about .main_image{
+.about .main_image {
   width: 100%;
   background-image: url('../images/aboutImg.png');
   background-position: center;
@@ -311,10 +358,10 @@ Country css end
   height: 400px;
   position: relative;
   overflow: hidden;
-  
+
 }
 
-.about .main_image .overly{
+.about .main_image .overly {
   width: 30%;
   height: 100%;
   background: red;
@@ -326,16 +373,18 @@ Country css end
   left: -30%;
   transition: 0.4s;
 }
-.about .main_image .overly h4{
+
+.about .main_image .overly h4 {
   font-size: 36px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: white;
   width: 262px;
-  
-  
+
+
 }
-.about .main_image .btn{
+
+.about .main_image .btn {
   height: 100%;
   background-image: url('../images/aboutImg.png');
   background-repeat: no-repeat;
@@ -344,11 +393,12 @@ Country css end
   background-size: 100%;
   transition: 0.4s;
 }
-.about .main_image:hover .btn{
+
+.about .main_image:hover .btn {
   background-size: 70%;
 }
 
-.about .main_image button{
+.about .main_image button {
   border: 2px solid white;
   padding: 10px 20px;
   background: red;
@@ -363,19 +413,21 @@ Country css end
   transition: .4s;
 }
 
-.about .main_image:hover .overly{
+.about .main_image:hover .overly {
   left: 0;
 
 }
 
-.about .main_image:hover button{
+.about .main_image:hover button {
   left: 64%;
 
 }
-.about .main_image button:hover{
+
+.about .main_image button:hover {
   background: rgba(20, 251, 4, 0.96);
 
 }
+
 /* ================
   About  css end
 =================== */
@@ -384,11 +436,12 @@ Country css end
 icon  css start
 =================== */
 
-.icon{
+.icons {
   background: #ffff;
   padding: 250px 0;
 }
-.icon .box{
+
+.icons .box {
   justify-content: space-between;
 }
 
@@ -399,59 +452,63 @@ icon  css end
 /* ================
   Cart  css start
 =================== */
-.cart{
+.cart {
   padding-top: 110px;
   padding-bottom: 160px;
   background: #F0F0F0;
 }
-.cart .box{
+
+.cart .box {
   justify-content: space-between;
 }
-.cart_item{
+
+.cart_item {
   width: 339px;
   height: 400px;
   position: relative;
   overflow: hidden;
 }
 
-.cart_item .overly{
+.cart_item .overly {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: -100%;
   left: 0;
   transition: .4s;
 }
-.cart_item:hover .overly{
+
+.cart_item:hover .overly {
   top: 0;
 }
 
-.cart .overly p{
+.cart .overly p {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: white;
   width: 249px;
 }
-.cart .overly a{
+
+.cart .overly a {
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: white;
   padding: 10px 22px;
-  
-  background: rgba(255, 255, 255,0.6);
+
+  background: rgba(255, 255, 255, 0.6);
   margin-top: 52px;
   display: inline-block;
 }
 
-.cart .overly{
+.cart .overly {
   padding: 76px 46px;
   box-sizing: border-box;
 }
 
-.cart h5{
+.cart h5 {
   padding-top: 30px;
   text-align: right;
   font-size: 16px;
@@ -461,9 +518,11 @@ icon  css end
 
 
 }
-.cart h5 i{
+
+.cart h5 i {
   margin-left: 5px;
 }
+
 /* ================
   Cart  css end
 =================== */
@@ -472,34 +531,39 @@ icon  css end
 Contact  css stact
 =================== */
 
-.contact img{
+.contact img {
   width: 100%;
 }
-.sub_section{
+
+.sub_section {
   padding: 46px 0px;
   background: red;
 }
-.contact .box h4{
+
+.contact .box h4 {
   font-size: 36px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
-.contact .box a{
+
+.contact .box a {
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: white;
   padding: 10px 22px;
-  
+
   background: transparent;
   display: inline-block;
   border: 2px solid white;
 }
-.contact .box{
+
+.contact .box {
   align-items: center;
   justify-content: space-between;
 }
+
 /* ================
   
 Contact  css end
@@ -508,70 +572,93 @@ Contact  css end
   
 Footer  css starty
 =================== */
-.footer{
-  background: #000;
-  padding-top: 120px;
-  padding-bottom: 220px;
+
+.footer {
+  padding-top: 150px;
+  padding-bottom: 250px;
+  background: rgb(0, 0, 0);
 }
 
-.footer .one{
-  width: 40%;
-}
-.footer .one img{
-  padding-bottom: 33px;
-}
-.footer .two{
-  width: 15%;
-
-}
-.footer .three{
-  width: 15%;
-}
-.footer .four{
+.footer .one {
   width: 30%;
-  
 }
-.footer .box ul {
+
+.footer .one ul {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 15px;
 }
-.footer ul li{
-  color: white;
+
+.footer .one ul li {
+  color: #fff;
 }
-.footer ul li i{
+
+.footer .one ul li i {
   margin-right: 5px;
 }
-.icon_imge{
-  column-gap: 20px;
-}
-.headli{
-  font-size: 18px;
-  font-weight: 600;
+
+.footer .two {
+  width: 20%;
+
 }
 
-.icon_ul {
+.footer .two ul {
   display: flex;
-  column-gap: 50px;
-
+  flex-direction: column;
+  row-gap: 15px;
 }
-.icon_ul li i{
-  margin-top: 50px;
+
+.footer .three ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer .four ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer .two ul li {
+  color: #fff;
+}
+
+.footer .three {
+  width: 20%;
+}
+
+.footer .three ul li {
+  color: #fff;
+}
+
+.footer .four ul li {
+  color: #fff;
+}
+
+.footer .four {
+  width: 30%;
+}
+
+.icon {
   color: red;
-  font-size: 30px;
-
+  display: flex;
+  column-gap: 40px;
+  font-size: 20px;
+  padding-top: 34px;
 }
+
 /* ================
   
 Footer  css end
 =================== */
 
-.copy{
+.copy {
   background: #282828;
   padding: 40px 0px;
 }
-.copy p{
+
+.copy p {
   color: #6C6C6C;
   font-size: 20px;
 }
-
